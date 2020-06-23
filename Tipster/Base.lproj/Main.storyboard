@@ -102,7 +102,22 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="505.79710144927537" y="117.85714285714285"/>
+            <point key="canvasLocation" x="464" y="123"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Q4L-uG-FhR">
+            <objects>
+                <viewController id="taq-xd-0qf" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ndU-HY-ugh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="czp-RO-heh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFf-1y-QPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1360" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ybf-pf-IsE">
