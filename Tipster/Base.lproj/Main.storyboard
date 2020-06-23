@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -87,7 +87,13 @@
                             <outletCollection property="gestureRecognizers" destination="giw-sy-gzd" appends="YES" id="oLW-Ld-d7M"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="Nio-Yc-2dB"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="Nio-Yc-2dB">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="9VK-8a-jSL">
+                            <connections>
+                                <segue destination="taq-xd-0qf" kind="show" id="cCE-jp-Qtf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mealBillField" destination="3jF-RD-cPb" id="GjU-ak-ZHo"/>
                         <outlet property="tipControl" destination="J1v-Ja-d3X" id="JZA-wD-01g"/>
@@ -114,6 +120,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="czp-RO-heh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GcF-m3-Dti"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFf-1y-QPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
