@@ -146,6 +146,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eTg-xq-Ahu">
                                         <rect key="frame" x="19" y="12" width="377" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="onFirstPercentSliderChange:" destination="taq-xd-0qf" eventType="valueChanged" id="wU6-hw-7vJ"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -157,6 +160,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="G0G-uP-QKz">
                                         <rect key="frame" x="19" y="12" width="377" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="onSecondPercentSliderChange:" destination="taq-xd-0qf" eventType="valueChanged" id="lfJ-Wi-9aR"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,6 +174,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ro3-Qn-DIL">
                                         <rect key="frame" x="19" y="12" width="377" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="onThirdPercentSliderChange:" destination="taq-xd-0qf" eventType="valueChanged" id="fr9-Zc-y9C"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -198,6 +207,14 @@
                         <viewLayoutGuide key="safeArea" id="czp-RO-heh"/>
                     </view>
                     <navigationItem key="navigationItem" id="GcF-m3-Dti"/>
+                    <connections>
+                        <outlet property="firstPercentLabel" destination="7KE-Dd-hgn" id="43B-Hq-8BX"/>
+                        <outlet property="firstPercentSlider" destination="eTg-xq-Ahu" id="TLk-DJ-fSy"/>
+                        <outlet property="secondPercentLabel" destination="bZN-nZ-bzK" id="NuK-A7-Nwo"/>
+                        <outlet property="secondPercentSlider" destination="G0G-uP-QKz" id="GQz-WV-Otw"/>
+                        <outlet property="thirdPercentLabel" destination="0as-c7-oM3" id="msj-XZ-D4x"/>
+                        <outlet property="thirdPercentSlider" destination="ro3-Qn-DIL" id="att-ka-XxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFf-1y-QPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

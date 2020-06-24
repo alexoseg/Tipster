@@ -9,6 +9,13 @@
 #import "SettingsViewController.h"
 
 @interface SettingsViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *firstPercentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *secondPercentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *thirdPercentLabel;
+
+@property (weak, nonatomic) IBOutlet UISlider *firstPercentSlider;
+@property (weak, nonatomic) IBOutlet UISlider *secondPercentSlider;
+@property (weak, nonatomic) IBOutlet UISlider *thirdPercentSlider;
 
 @end
 
@@ -19,14 +26,19 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)onFirstPercentSliderChange:(id)sender {
+    double sliderPercent = self.firstPercentSlider.value * 100;
+    self.firstPercentLabel.text = [NSString stringWithFormat:@"%.0f%%", sliderPercent];
 }
-*/
+
+- (IBAction)onSecondPercentSliderChange:(id)sender {
+    double sliderPercent = self.secondPercentSlider.value * 100;
+    self.secondPercentLabel.text = [NSString stringWithFormat:@"%.0f%%", sliderPercent];
+}
+
+- (IBAction)onThirdPercentSliderChange:(id)sender {
+    double sliderPercent = self.thirdPercentSlider.value * 100;
+    self.thirdPercentLabel.text = [NSString stringWithFormat:@"%.0f%%", sliderPercent];
+}
 
 @end
