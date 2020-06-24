@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setDouble:0.15 forKey:@"default_tip_percent_1"];
+    [defaults setDouble:0.2 forKey:@"default_tip_percent_2"];
+    [defaults setDouble:0.22 forKey:@"default_tip_percent_3"];
+    
     return YES;
 }
 
